@@ -11,6 +11,18 @@ Summary: Iris sample data.
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/iris-sample-data-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/iris-sample-data-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/iris-sample-data-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/iris-sample-data-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/iris-sample-data-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/iris-sample-data-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/iris-sample-data/badges/version.svg)](https://anaconda.org/conda-forge/iris-sample-data)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/iris-sample-data/badges/downloads.svg)](https://anaconda.org/conda-forge/iris-sample-data)
+
 Installing iris-sample-data
 ===========================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `iris-sample-data` available on yo
 ```
 conda search iris-sample-data --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/iris-sample-data-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/iris-sample-data-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/iris-sample-data-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/iris-sample-data-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/iris-sample-data-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/iris-sample-data-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/iris-sample-data/badges/version.svg)](https://anaconda.org/conda-forge/iris-sample-data)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/iris-sample-data/badges/downloads.svg)](https://anaconda.org/conda-forge/iris-sample-data)
 
 
 Updating iris-sample-data-feedstock
