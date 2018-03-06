@@ -1,22 +1,22 @@
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 
 package:
     name: iris-sample-data
     version: {{ version }}
 
 source:
-    fn: iris-sample-data-{{ version }}.tar.gz
     url: https://github.com/SciTools/iris-sample-data/archive/v{{ version }}.tar.gz
-    sha256: 8907f2ac0e38a32e39f79db7e6426d25c27cb18b9ad510a33f3f2538ebac12ac
+    sha256: 370066e5e43e8aa0c3ae9d7ef727fc1e28f11a5f965bc7864846013599df8135
 
 build:
+    noarch: python
     number: 0
-    script: python setup.py install --single-version-externally-managed --record record.txt
+    script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
     build:
         - python
-        - setuptools
+        - pip
     run:
         - python
 
@@ -32,3 +32,5 @@ about:
 extra:
     recipe-maintainers:
         - ocefpaf
+        - bjlittle
+        - dkillick
