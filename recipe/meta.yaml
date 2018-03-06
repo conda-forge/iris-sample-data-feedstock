@@ -1,22 +1,21 @@
 {% set version = "2.1.0" %}
-{% set name = "iris-sample-data" %}
 
 package:
-    name: {{ name }}
+    name: iris-sample-data
     version: {{ version }}
 
 source:
-    url: https://github.com/SciTools/{{ name }}/archive/v{{ version }}.tar.gz
+    url: https://github.com/SciTools/iris-sample-data/archive/v{{ version }}.tar.gz
     sha256: 370066e5e43e8aa0c3ae9d7ef727fc1e28f11a5f965bc7864846013599df8135
 
 build:
     number: 0
-    script: python setup.py install --single-version-externally-managed --record record.txt
+    script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
     build:
         - python
-        - setuptools
+        - pip
     run:
         - python
 
