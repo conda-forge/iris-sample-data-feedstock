@@ -14,9 +14,7 @@ Summary: Iris sample data.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/iris-sample-data-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/iris-sample-data-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/iris-sample-data-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/iris-sample-data-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/iris-sample-data-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/iris-sample-data-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/iris-sample-data-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/iris-sample-data-feedstock)
 
 Current release info
 ====================
