@@ -1,36 +1,36 @@
-{% set version = "2.2.0" %}
+{% set version = "2.3.0" %}
 
 package:
-    name: iris-sample-data
-    version: {{ version }}
+  name: iris-sample-data
+  version: {{ version }}
 
 source:
-    url: https://github.com/SciTools/iris-sample-data/archive/v{{ version }}.tar.gz
-    sha256: cf5ffd55a713f3c3a1f39b9ebcd60cd971f9ac56331d4af5b05c72e3eefb73af
+  url: https://github.com/SciTools/iris-sample-data/archive/v{{ version }}.tar.gz
+  sha256: a690cdba45584c949935f0d477365da1b9d04e99e42e58ca1fba99cf4698fa73
 
 build:
-    noarch: python
-    number: 0
-    script: python -m pip install --no-deps --ignore-installed .
+  noarch: python
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-    build:
-        - python
-        - pip
-    run:
-        - python
+  build:
+    - python
+    - pip
+  run:
+    - python
 
 test:
-    imports:
-        - iris_sample_data
+  imports:
+    - iris_sample_data
 
 about:
-    home: https://github.com/SciTools/iris-sample-data
-    license: Open Government
-    summary: 'Iris sample data.'
+  home: https://github.com/SciTools/iris-sample-data
+  license: Open Government
+  summary: Iris sample data.
 
 extra:
-    recipe-maintainers:
-        - ocefpaf
-        - bjlittle
-        - DPeterK
+  recipe-maintainers:
+    - ocefpaf
+    - bjlittle
+    - DPeterK
