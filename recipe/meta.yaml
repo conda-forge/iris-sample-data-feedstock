@@ -1,4 +1,4 @@
-{% set version = "2.2.0" %}
+{% set version = "2.3.0" %}
 
 package:
     name: iris-sample-data
@@ -6,7 +6,7 @@ package:
 
 source:
     url: https://github.com/SciTools/iris-sample-data/archive/v{{ version }}.tar.gz
-    sha256: cf5ffd55a713f3c3a1f39b9ebcd60cd971f9ac56331d4af5b05c72e3eefb73af
+    sha256: a690cdba45584c949935f0d477365da1b9d04e99e42e58ca1fba99cf4698fa73
 
 build:
     noarch: python
