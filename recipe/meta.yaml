@@ -28,7 +28,7 @@ test:
 
 about:
   home: https://github.com/SciTools/iris-sample-data
-  license: Open Government
+  license: OGL-UK-3.0
   license_family: OTHER
   summary: Iris sample data.
 
