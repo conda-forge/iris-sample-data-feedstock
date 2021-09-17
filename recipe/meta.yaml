@@ -1,12 +1,13 @@
-{% set version = "2.3.0" %}
+{% set name = "iris-sample-data" %}
+{% set version = "2.4.0" %}
 
 package:
-  name: iris-sample-data
+  name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://github.com/SciTools/iris-sample-data/archive/v{{ version }}.tar.gz
-  sha256: a690cdba45584c949935f0d477365da1b9d04e99e42e58ca1fba99cf4698fa73
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 09364a111533c628fc604d935159ad477927d5a8cef1bb6b25f0b18462bea157
 
 build:
   noarch: python
@@ -17,8 +18,9 @@ requirements:
   build:
     - python
     - pip
+    - setuptools-scm
   run:
-    - python
+    - python >=3.7
 
 test:
   imports:
@@ -26,7 +28,8 @@ test:
 
 about:
   home: https://github.com/SciTools/iris-sample-data
-  license: Open Government
+  license: OGL-UK-3.0
+  license_family: OTHER
   summary: Iris sample data.
 
 extra:
@@ -34,3 +37,4 @@ extra:
     - ocefpaf
     - bjlittle
     - DPeterK
+    - trexfeathers
