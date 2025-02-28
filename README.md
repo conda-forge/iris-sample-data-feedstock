@@ -148,4 +148,5 @@ Feedstock Maintainers
 * [@ocefpaf](https://github.com/ocefpaf/)
 * [@stephenworsley](https://github.com/stephenworsley/)
 * [@trexfeathers](https://github.com/trexfeathers/)
+* [@ukmo-ccbunney](https://github.com/ukmo-ccbunney/)
 
