@@ -1,5 +1,5 @@
 {% set name = "iris-sample-data" %}
-{% set version = "2.5.1" %}
+{% set version = "2.5.2" %}
 
 package:
   name: {{ name }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 83849e6cfc2ffcadf25392f2c855227b413018bb30254b92af8a2594a611d5ba
+  sha256: ce4fcab91eafc5f64dd6ad66c11f4fb9ae57a272c9801fd197be86531e3edd9b
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
